@@ -102,7 +102,7 @@ class Sobrevivente {
       console.log(`O ${infectado.tipo} percebeu sua presença e te pegou!`);
       this.pontos_de_vida = 0;
     } else {
-      let chanceFracasso = (0.6 + (this.furtividade / 10)) - (infectado.percepcao / 10)
+      let chanceFracasso = (0.6 + (infectado.percepcao / 10)) - (this.percepcao / 10)
       let varResultado = Math.random()
       console.log(chanceFracasso)
       console.log(varResultado)
